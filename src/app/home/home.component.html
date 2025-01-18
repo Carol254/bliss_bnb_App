@@ -8,7 +8,10 @@
 <body>
     <ul>
         @for(bnb of bnbs;track bnb.id){
-            <li> {{ bnb.bed_type }} - {{ bnb.minimum_nights }} nights - {{ bnb.cancellation_policy }}</li>
+            <img src="{{ bnb.images.picture_url }}" alt="{{ bnb.name }}" width="100" height="100" style="border-radius: 10px;" />
+            <li> {{ bnb.name }} </li>
+            <li> {{ bnb.host.host_name}}</li>
+            <li> {{ bnb.bed_type }} - {{ bnb.minimum_nights }} nights</li>
         }
     </ul>
 </body>
