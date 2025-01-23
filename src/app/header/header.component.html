@@ -24,6 +24,73 @@
         </div>
       </div>
     </div>
+
+    <div class="flex justify-center items-center ">
+        <div class="flex justify-center items-center  space-x-6 border border-gray-300 rounded-full p-2 w-3/4 mb-4">
+            <!-- Where Dropdown -->
+            <div class="relative" (click)="toggleWhere()">
+              <button class="text-sm font-medium text-start text-gray-700 px-4 py-2 ">
+                Where
+                <br>
+                <span class="text-gray-500">Search destinations</span>
+              </button>
+              <div *ngIf="showWhere" class="absolute bg-white text-gray-700 border border-gray-300 rounded-md mt-1 w-48 z-10">
+                <a href="#" class="block px-4 py-2">Nairobi</a>
+                <a href="#" class="block px-4 py-2">Mombasa</a>
+                <a href="#" class="block px-4 py-2">Kisumu</a>
+              </div>
+            </div>
+          
+            <!-- Check In Calendar -->
+            <div class="relative" (click)="toggleCheckIn()">
+             <button class="text-sm font-medium text-start text-gray-700 px-4 py-2  border-l border-gray-300">
+                Check In
+                <br>
+                <span class="text-gray-500">Add dates</span>
+              </button>
+              <div *ngIf="showCheckIn" class="absolute bg-white text-gray-700 border border-gray-300 rounded-md mt-1 w-48 z-10">
+                <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded-md" />
+              </div>
+            </div>
+          
+            <!-- Check Out Calendar -->
+            <div class="relative" (click)="toggleCheckOut()">
+                <button class="text-sm font-medium text-start text-gray-700 px-4 py-2  border-l border-gray-300">
+                Check Out
+                <br>
+                <span class="text-gray-500">Add dates</span>
+              </button>
+              <div *ngIf="showCheckOut" class="absolute bg-white text-gray-700 border border-gray-300 rounded-md mt-1 w-48 z-10">
+                <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded-md" />
+              </div>
+            </div>
+          
+            <!-- Who Dropdown -->
+            <div class="relative" (click)="toggleWho()">
+              <button class="text-sm font-medium text-start text-gray-700 px-4 py-2  border-l border-gray-300">
+                Who
+                <br>
+                <span class="text-gray-500">Add guests</span>
+
+                <div class="flex-end">
+                    <img src="assets/search.png" alt="plus" class="h-4 w-4">
+                </div>
+              </button>
+              <div *ngIf="showWho" class="absolute bg-white text-gray-700 border border-gray-300 rounded-md mt-1 w-48 z-10">
+                <a href="#" class="block px-4 py-2">1</a>
+                <a href="#" class="block px-4 py-2">2</a>
+                <a href="#" class="block px-4 py-2">3</a>
+              </div>
+            </div>
+          </div>
+    </div>   
+
+ 
+      
+      
+      
+
+
   </nav>
   
   
